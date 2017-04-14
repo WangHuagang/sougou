@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>主页-搜购</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta name="keywords" content="搜购 附近搜索 搜一搜 附近定位" />
+    <meta name="author" content="CDU-oZo" />
+    <meta name="renderer" content="webkit" />
+    <link rel="shortcuticon" href="images/icon/favicon.ico" type="image/x-icon"/>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.slideBox.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/jquery.slideBox.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script>
+        jQuery(function($){
+            $('#banner').slideBox({
+                duration : 0.3,//滚动持续时间，单位：秒
+                easing : 'linear',//swing,linear//滚动特效
+                delay : 5,//滚动延迟时间，单位：秒
+                hideClickBar : false,//不自动隐藏点选按键
+                clickBarRadius : 10
+            });
+        });
+    </script>
+</head>
+<body>
+<!--头部信息-->
+  <header>
+      <!--左侧logo-->
+      <div class="logo left">
+          <h2>搜购</h2>
+          <img src="images/LOGO.png" alt="LOGO"/>
+          <span>HI!<strong>勾勾函数lq</strong>你好</span>
+      </div>
+      <!--右侧导航-->
+      <div class="nav right">
+          <ul>
+              <li><a href="#">首页</a></li>
+              <li><a href="#">登录</a></li>
+              <li><a href="#">注册</a></li>
+              <li>
+                  <a href="#" class="add_arrow add_arrow1">我的搜购</a>
+                  <ul class="sec_ul sec_ul1">
+                      <li><a href="#">我的订单</a></li>
+                      <li><a href="#">个人中心</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#" class="add_arrow add_arrow2">联系店家</a>
+                    <ul class="sec_ul sec_ul2">
+                      <li><a href="#">免费加盟</a></li>
+                      <li><a href="#">店铺地址</a></li>
+                      <li><a href="#">联系方式</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">退出</a></li>
+          </ul>
+      </div>
+  </header>
+
+<!--搜索栏目-->
+    <nav>
+        <form action="#" method="get">
+            <input type="search" name=""class="search" placeholder="请输入商品名称/商圈/店铺名称"/>
+            <button name="">搜搜附近</button>
+        </form>
+    </nav>
+
+
+<!--广告、列表-->
+<div class="bannerbox comwid">
+    <div class="banner_left">
+        <div class="type list">
+            <h2>种类</h2>
+            <ul>
+                <li><a href="#">女装/男装</a></li>
+                <li><a href="#">鞋靴/箱包</a></li>
+                <li><a href="#">美妆/洗护</a></li>
+                <li><a href="#">家电/数码</a></li>
+                <li><a href="#">运动/户外</a></li>
+                <li><a href="#">美食/生鲜</a></li>
+                <li><a href="#">汽车/二手车</a></li>
+            </ul>
+        </div>
+        <div class="nation list">
+            <h2>地区</h2>
+            <ul>
+               <li><a href="#">北京市</a></li>
+               <li><a href="#">上海市</a></li>
+               <li><a href="#">天津市</a></li>
+               <li><a href="#">重庆市</a></li>
+               <li><a href="#">黑龙江省</a></li>
+               <li><a href="#">吉林省</a></li>
+               <li><a href="#">辽宁省</a></li>
+               <li><a href="#">江苏省</a></li>
+               <li><a href="#">山东省</a></li>
+               <li><a href="#">安徽省</a></li>
+               <li><a href="#">河北省</a></li>
+               <li><a href="#">河南省</a></li>
+               <li><a href="#">四川省</a></li>
+            </ul>
+        </div>
+        <div class="nameplate list">
+            <h2>名牌</h2>
+            <ul>
+                <li><a href="#">H&M</a></li>
+                <li><a href="#">NIKE</a></li>
+                <li><a href="#">Adidas</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="banner" class="slideBox">
+        <ul class="items">
+            <li><a href="#" title="活动促销一"><img src="images/A1.jpg"></a></li>
+            <li><a href="#" title="活动促销二"><img src="images/A2.jpg"></a></li>
+            <li><a href="#" title="活动促销三"><img src="images/A3.jpg"></a></li>
+            <li><a href="#" title="活动促销四"><img src="images/A4.jpg"></a></li>
+        </ul>
+    </div>
+
+    <div class="banner_right">
+        <div class="banner_right_top">
+            <p>勾勾函数lq</p>
+            <img class="tou" src="images/touxiang.png" alt="img"/>
+            <div class="qiandao">
+                <img src="images/qiandao.png" alt=""/>
+                <span><a href="#">签到</a></span>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+        <hr/>
+        <div class="banner_right_middle">
+            <a href="#">秒杀篮</a>
+            <a href="#">预定篮</a>
+            <a href="#">我的主页</a>
+        </div>
+        <div class="clearfix"></div>
+        <hr/>
+        <div class="banner_right_bottom">
+            <h1>爱好推荐&gt;</h1>
+            <div class="clearfix"></div>
+            <img src="images/like1.png" alt=""/>
+            <img src="images/like2.png" alt=""/>
+            <img src="images/like3.png" alt=""/>
+            <img src="images/like4.png" alt=""/>
+        </div>
+    </div>
+</div>
+<!--清楚浮动，添加空白-->
+<div class="blank"></div>
+
+
+<!--上新、秒杀-->
+<div class="goods comwid clearfix">
+
+    <div class="hot_search comwid">
+        <img src="images/hot_search.png" alt="热搜图片"/>
+    </div>
+
+    <!--上新区-->
+    <div class="up_new goods_box">
+        <div class="up_new_title">
+            <span>上新区</span>
+            <a href="#">去上新页&gt;</a>
+        </div>
+        <!--具体的商品信息-->
+        <div class="up_new_list left">
+            <a href="#"><img src="images/up_new1.png" alt="衣服图片"/></a>
+            <p>&yen;455</p>
+            <i>La Chapelle春季款</i><br>
+            <span class="location">金牛区万达广场</span>
+        </div>
+        <!--具体的商品信息-->
+        <div class="up_new_list left">
+            <a href="#"><img src="images/up_new2.png" alt="衣服图片"/></a>
+            <p>&yen;165</p>
+            <i>H&M春季款1</i><br>
+            <span class="location">金牛区万达广场</span>
+        </div>
+        <!--具体的商品信息-->
+        <div class="up_new_list left">
+            <a href="#"><img src="images/up_new3.png" alt="衣服图片"/></a>
+            <p>&yen;369</p>
+            <i>H&M春季款1</i><br>
+            <span class="location">金牛区万达广场</span>
+        </div>
+        <!--具体的商品信息-->
+        <div class="up_new_list left">
+            <a href="#"><img src="images/up_new7.png" alt="衣服图片"/></a>
+            <p>&yen;220</p>
+            <i>H&M春季款2</i><br>
+            <span class="location">金牛区万达广场</span>
+        </div>
+        <!--具体的商品信息-->
+        <div class="up_new_list left">
+            <a href="#"><img src="images/up_new5.png" alt="衣服图片"/></a>
+            <p>&yen;458</p>
+            <i>H&M春季款3</i><br>
+            <span class="location">金牛区万达广场</span>
+        </div>
+        <!--具体的商品信息-->
+        <div class="up_new_list left">
+            <a href="#"><img src="images/up_new6.png" alt="衣服图片"/></a>
+            <p>&yen;300</p>
+            <i>H&M春季款4</i><br>
+            <span class="location">金牛区万达广场</span>
+        </div>
+    </div>
+    <!--秒杀区-->
+    <div class="goods_box second_kill">
+        <div class="up_new_title">
+            <span>秒杀区</span>
+            <a href="html/seckill.html">去秒杀页&gt;</a>
+        </div>
+        <!--倒计时-->
+        <div class="count_down">
+            <p>距离女王节秒杀活动开始还有：</p>
+            <span class="cd_span" id="cd_span1"></span>
+            <span class="cd_span">天</span>
+            <span class="cd_span" id="cd_span2"></span>
+            <span class="cd_span">时</span>
+            <span class="cd_span" id="cd_span3"></span>
+            <span class="cd_span">分</span>
+            <span class="cd_span" id="cd_span4"></span>
+            <span class="cd_span">秒</span>
+        </div>
+        <!--具体秒杀的商品信息-->
+        <div class="up_new_list left">
+            <a href="#"><img src="images/sc_1.png" alt="衣服图片"/></a>
+            <p>&yen;400</p>
+            <i>H&M春季款4</i><br>
+            <span class="location">春熙路万达广场</span>
+        </div>
+        <div class="up_new_list left">
+            <a href="#"><img src="images/sc_2.png" alt="衣服图片"/></a>
+            <p>&yen;360</p>
+            <i>H&M春季款4</i><br>
+            <span class="location">建设路万达广场</span>
+        </div>
+        <div class="up_new_list left">
+            <a href="#"><img src="images/sc_3.png" alt="衣服图片"/></a>
+            <p>&yen;240</p>
+            <i>H&M春季款4</i><br>
+            <span class="location">万达广场</span>
+        </div>
+    </div>
+    <!--折扣区-->
+    <div class="goods_box">
+        <div class="up_new_title">
+            <span>折扣区</span>
+            <a href="#">去折扣页&gt;</a>
+        </div>
+        <!--具体打折的商品信息-->
+        <div class="up_new_list left">
+            <a href="#"><img src="images/sale1.png" alt="衣服图片"/></a>
+            <p>&yen;400</p>
+            <i>H&M春季款4</i><br>
+            <span class="location">春熙路万达广场</span>
+        </div>
+        <div class="up_new_list left">
+            <a href="#"><img src="images/up_new2.png" alt="衣服图片"/></a>
+            <p>&yen;400</p>
+            <i>H&M春季款4</i><br>
+            <span class="location">春熙路万达广场</span>
+        </div>
+        <div class="up_new_list left">
+            <a href="#"><img src="images/up_new1.png" alt="衣服图片"/></a>
+            <p>&yen;400</p>
+            <i>H&M春季款4</i><br>
+            <span class="location">春熙路万达广场</span>
+        </div>
+        <div class="up_new_list left">
+            <a href="html/sale.html"><img src="images/sale4.png" alt="衣服图片"/></a>
+            <p>&yen;400</p>
+            <i>H&M春季款4</i><br>
+            <span class="location">春熙路万达广场</span>
+        </div>
+        <div class="up_new_list left">
+            <a href="#"><img src="images/sale5.png" alt="衣服图片"/></a>
+            <p>&yen;400</p>
+            <i>H&M春季款4</i><br>
+            <span class="location">春熙路万达广场</span>
+        </div>
+        <div class="up_new_list left">
+            <a href="#"><img src="images/sale6.png" alt="衣服图片"/></a>
+            <p>&yen;400</p>
+            <i>H&M春季款4</i><br>
+            <span class="location">春熙路万达广场</span>
+        </div>
+    </div>
+</div>
+
+<!--清楚浮动，添加空白-->
+<div class="blank"></div>
+<!--底部信息-->
+<div class="footer">
+    <div class="blank"></div>
+    <sapn><a href="#">关于我们</a></sapn>
+    <span><a href="#">联系我们</a></span>
+    <span><a href="#">搜购合作</a></span>
+    <span><a href="#">加盟合作</a></span>
+    <span>© 2017-2018 搜购 版权所有</span>
+    <p>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</p>
+    <div class="footer_logo">
+        <img src="images/footer_logo.png" alt="图片"/>
+        <img src="images/footer_logo2.jpg" alt="图片"/>
+        <img src="images/footer_logo3.jpg" alt="图片"/>
+    </div>
+</div>
+</body>
+</html>

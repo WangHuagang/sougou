@@ -1,0 +1,48 @@
+body,textarea,input,select,option{font-size:14px;color:#333;font-family:'微软雅黑',Tahoma,Arial,sans-serif;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+body,h1,h2,h3,h4,h5,h6,ol,ul,dl,dd,p,textarea,input,select,option,form{margin:0;}
+ol,ul,textarea,input,option,th,td{padding:0;}
+textarea{overflow:auto;resize:none;}
+table{border-collapse:collapse;}
+ol,ul{list-style-type:none;}
+a{text-decoration:none;outline:none;color:#333;}
+a:hover{color: red;}
+a img{border:none;}
+img{display:block;}
+body{min-width: 1200px;margin: 0 auto;}
+.comwid{width: 1200px;margin: 0 auto;}
+.left{float: left;}
+.right{float: right;}
+.clearfix::before,
+.clearfix::after{content: "";height: 0;line-height: 0;display: block;visibility: hidden;clear: both;}
+.blank{width: 100%;clear: both;height: 5px;}
+
+
+/*头部信息*/
+header{width: 100%;height: 50px;background-color: #f1cf78;position: fixed;top:0;left:0;z-index: 888;}
+header .logo h2{display: block;float: left;padding-left: 20px;font-size: 26px;line-height: 50px;}
+header .logo img{display: block;float: left;width: 48px;height: 44px;padding: 2px 10px;}
+header .logo span{display: block;float: left;margin-left: 25px;line-height: 50px;font-size: 16px;}
+header .nav > ul{margin-right: 25px;}
+header .nav > ul > li{float: left;}
+header .nav > ul > li > a{display: block;padding:0px 15px;line-height: 50px;font-size: 16px;}
+header .nav > ul > li .add_arrow{background: url("../images/icon/down_arrow.png") no-repeat 98% center}
+header .nav .sec_ul{display: none;}
+header .nav .sec_ul li a{padding:5px 15px;display: block;border-bottom: 2px solid #F5F5F5;background-color: #ffff7d;
+    font-size: 14px;}
+
+/*导航栏目*/
+nav{width: 100%;height: 100px;background-color: #e4e2cd;margin-top: 50px}
+nav form{display:block;text-align:center;padding-top: 32px;}
+nav form input{outline: none;border: none;width: 630px;height: 36px;border-radius: 18px;text-indent: 20px;
+    font-size: 18px;}
+nav form button{border: none;font-size: 20px;outline: none}
+nav form button:hover{cursor: pointer;}
+
+
+/*底部信息*/
+.footer{height:100px;background-color: #e4e2cd;text-align: center}
+.footer_logo{width:800px;margin: 0 auto;}
+.footer_logo img{width:95px;height: 35px; float: left;}
+.footer_logo img:last-child,img:nth-child(2){width: 250px;height: 40px;padding-left: 30px;}
+.footer span{padding-left: 10px;}

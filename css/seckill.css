@@ -1,0 +1,15 @@
+/*点击按钮*/
+.content{margin-top: 20px;}
+.content .content_btn .price_btn{width:100px;height: 30px;background-color: #f4d992;overflow: hidden;margin-right: 50px;}
+.content .content_btn .price_btn a{display:block;width: 100px;height: 30px;border-radius: 3px;text-align: center;line-height: 30px;background-color: #f4d992;}
+.content .content_btn .price_btn a:first-child{background:  url("../images/icon/down_arrow.png") no-repeat 95% center}
+.content .content_btn .price{padding-top: 5px;padding-right: 20px;}
+
+
+/*商品信息*/
+.content_sec{margin-top: 40px;}
+.content_sec .up_new_list{margin-left:30px;width: 170px;margin-bottom: 80px;}
+.content_sec .up_new_list img{display:block;margin: 0 auto;width: 97px;height: 100px;}
+.content_sec .up_new_list p{padding-left:40px;color: red;line-height: 26px;}
+.content_sec .up_new_list i{font-style: normal;}
+.content_sec .up_new_list .location{display: block;font-size:12px;background: url("../images/icon/map.png") no-repeat 3px center;padding-left:18px;padding-top: 5px;}
