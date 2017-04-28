@@ -11,11 +11,21 @@ $(function(){
 /*倒计时*/
 $(function(){
     show_time();
+
+    $("#citySelect").citySelect({
+        nodata: "none",
+        required: false,
+    });
+    $(".change").on('click',function(){
+        $('#citySelect').css({
+            display:'block'
+        })
+    })
 });
 
 function show_time(){
     var time_start = new Date().getTime(); //设定当前时间
-    var time_end =  new Date("2017/04/09 00:00:00").getTime(); //设定目标时间
+    var time_end =  new Date("2017/05/09 00:00:00").getTime(); //设定目标时间
     // 计算时间差
     var time_distance = time_end - time_start;
     // 天

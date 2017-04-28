@@ -8,7 +8,10 @@
     <meta name="author" content="CDU-oZo" />
     <meta name="renderer" content="webkit" />
     <script src="../js/jquery-1.7.1.min.js"></script>
-    <script src="../js/Myjs.js"></script>
+    <script src="../js/jquery.cityselect.js"></script>
+    <script src="../js/city.min.js"></script>
+    <script src="../js/Myjs.js" charset="gbk"></script>
+    <script src="../js/index.js"></script>
     <link rel="stylesheet" href="../css/common.css"/>
     <link rel="stylesheet" href="../css/seckill.css"/>
 </head>
@@ -24,9 +27,9 @@
     <!--右侧导航-->
     <div class="nav right">
         <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="#">登录</a></li>
-            <li><a href="#">注册</a></li>
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="sign_in.html">登录</a></li>
+            <li><a href="sign_up.html">注册</a></li>
             <li>
                 <a href="#" class="add_arrow add_arrow1">我的搜购</a>
                 <ul class="sec_ul sec_ul1">
@@ -49,10 +52,21 @@
 
 <!--搜索栏目-->
 <nav>
-    <form action="#" method="get">
-        <input type="search" name=""class="search" placeholder="请输入商品名称/商圈/店铺名称"/>
-        <button name="">搜搜附近</button>
-    </form>
+    <div class="nav-left left">
+        <span class="left">您当前的位置：<strong id="loca-city">成都市</strong></span>
+        <span class="change left">[<a href="#">切换城市</a>]</span><br><br>
+        <div id="citySelect">
+            <select class="prov" id="province"></select>
+            <select class="city" disabled="disabled" id="city"></select>
+            <select class="dist" disabled="disabled" id="county"></select>
+        </div>
+    </div>
+    <div class="nav-right left">
+        <form action="#" method="get">
+            <input type="search" name=""class="search" placeholder="请输入商品名称/商圈/店铺名称"/>
+            <button name="">搜搜附近</button>
+        </form>
+    </div>
 </nav>
 
 
@@ -173,11 +187,6 @@
     <span><a href="#">加盟合作</a></span>
     <span>© 2017-2018 搜购 版权所有</span>
     <p>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</p>
-    <div class="footer_logo">
-        <img src="../images/footer_logo.png" alt="图片"/>
-        <img src="../images/footer_logo2.jpg" alt="图片"/>
-        <img src="../images/footer_logo3.jpg" alt="图片"/>
-    </div>
 </div>
 </body>
 </html>

@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <title>主页-搜购</title>
     <meta name="baidu-site-verification" content="Jokox8y9fM" />
-    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
     <meta name="keywords" content="搜购 附近搜索 搜一搜 附近定位 成都大学ozo团队 ozo团队" />
     <meta name="author" content="CDU-oZo" />
     <meta name="renderer" content="webkit" />
     <link rel="shortcuticon" href="images/icon/favicon.ico" type="image/x-icon"/>
-    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery-1.7.1.min.js" ></script>
+    <script src="js/jquery.cityselect.js"></script>
+    <script src="js/city.min.js" ></script>
     <script src="js/jquery.slideBox.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/index.js" language="JavaScript" charset="gbk"></script>
     <link rel="stylesheet" href="css/jquery.slideBox.css"/>
     <link rel="stylesheet" href="css/index.css"/>
     <script>
@@ -39,8 +41,8 @@
       <div class="nav right">
           <ul>
               <li><a href="#">首页</a></li>
-              <li><a href="#">登录</a></li>
-              <li><a href="#">注册</a></li>
+              <li><a href="html/sign_in.html">登录</a></li>
+              <li><a href="html/sign_up.html">注册</a></li>
               <li>
                   <a href="#" class="add_arrow add_arrow1">我的搜购</a>
                   <ul class="sec_ul sec_ul1">
@@ -63,12 +65,22 @@
 
 <!--搜索栏目-->
     <nav>
-        <form action="#" method="get">
-            <input type="search" name=""class="search" placeholder="请输入商品名称/商圈/店铺名称"/>
-            <button name="">搜搜附近</button>
-        </form>
+        <div class="nav-left left">
+            <span class="left">您当前的位置：<strong id="loca-city">成都市</strong></span>
+            <span class="change left">[<a href="#">切换城市</a>]</span><br><br>
+            <div id="citySelect">
+                <select class="prov" id="province"></select>
+                <select class="city" disabled="disabled" id="city"></select>
+                <select class="dist" disabled="disabled" id="county"></select>
+            </div>
+        </div>
+       <div class="nav-right left">
+           <form action="#" method="get">
+               <input type="search" name=""class="search" placeholder="请输入商品名称/商圈/店铺名称"/>
+               <button name="">搜搜附近</button>
+           </form>
+       </div>
     </nav>
-
 
 <!--广告、列表-->
 <div class="bannerbox comwid">
@@ -275,7 +287,7 @@
             <span class="location">春熙路万达广场</span>
         </div>
         <div class="up_new_list left">
-            <a href="html/sale.html"><img src="images/sale4.png" alt="衣服图片"/></a>
+            <a href="html/sale.html"><img src="images/x1_1.png" alt="衣服图片"/></a>
             <p>&yen;400</p>
             <i>H&M春季款4</i><br>
             <span class="location">春熙路万达广场</span>
@@ -306,11 +318,7 @@
     <span><a href="#">加盟合作</a></span>
     <span>© 2017-2018 搜购 版权所有</span>
     <p>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</p>
-    <div class="footer_logo">
-        <img src="images/footer_logo.png" alt="图片"/>
-        <img src="images/footer_logo2.jpg" alt="图片"/>
-        <img src="images/footer_logo3.jpg" alt="图片"/>
-    </div>
 </div>
+
 </body>
 </html>

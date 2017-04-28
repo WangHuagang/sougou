@@ -6,7 +6,7 @@ textarea{overflow:auto;resize:none;}
 table{border-collapse:collapse;}
 ol,ul{list-style-type:none;}
 a{text-decoration:none;outline:none;color:#333;}
-a:hover{color: red;}
+a:hover{color: #7974ff;}
 a img{border:none;}
 img{display:block;}
 body{min-width: 1200px;margin: 0 auto;}
@@ -32,16 +32,22 @@ header .nav .sec_ul li a{padding:5px 15px;display: block;border-bottom: 2px soli
 font-size: 14px;}
 
 /*导航栏目*/
-nav{width: 100%;height: 100px;background-color: #e4e2cd;margin-top: 50px}
-nav form{display:block;text-align:center;padding-top: 32px;}
-nav form input{outline: none;border: none;width: 630px;height: 36px;border-radius: 18px;text-indent: 20px;
-font-size: 18px;}
-nav form button{border: none;font-size: 20px;outline: none}
+nav{width: 100%;height: 80px;background-color: #fff;margin-top: 55px;}
+nav .nav-left{width: 30%;margin-left:20px;}
+nav .nav-right{width: 60%;}
+nav .change{padding: 0 10px;color: #ff201e;}
+nav #citySelect{clear:both;display: none;}
+nav #citySelect select{background-color:#fbffbc}
+nav form{display:block;float:left;padding-top: 22px;}
+nav form input{outline: none;border: none;width: 500px;height: 36px;border-radius: 18px;background: #f1cf78;text-indent: 20px;  font-size: 18px;}
+nav form button{border: none;font-size: 20px;outline: none;background-color:#edffa0;}
 nav form button:hover{cursor: pointer;}
 
 /*商品信息*/
 .bannerbox{background-color:#e4e2cd; }
 .banner_left{width: 220px;height: 300px;background-color: #f1cf78;float: left;margin-right: 5px;}
+#banner{width: 630px;}
+.slideBox .item{width: 630px;}
 .banner_right{width: 340px;height: 300px;margin-left: 5px;float:left;/*background: url("../images/login_bg.png") no-repeat 0 center*/}
 .banner_right_top{width: 100%;height: 120px;}
 .banner_right_top p{float: left;line-height: 120px;font-size: 18px;color: #ff6888;}
@@ -80,8 +86,5 @@ font-size: 20px;line-height: 40px;text-align: center;}
 .second_kill .cd_span:nth-child(2n-1){background-color: #f6f6f6;}
 
 /*底部信息*/
-.footer{height:100px;background-color: #e4e2cd;text-align: center}
-.footer_logo{width:800px;margin: 0 auto;}
-.footer_logo img{width:95px;height: 35px; float: left;}
-.footer_logo img:last-child,img:nth-child(2){width: 250px;height: 40px;padding-left: 30px;}
+.footer{height:60px;background-color: #f1cf78;text-align: center}
 .footer span{padding-left: 10px;}

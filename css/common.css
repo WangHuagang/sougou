@@ -32,17 +32,18 @@ header .nav .sec_ul li a{padding:5px 15px;display: block;border-bottom: 2px soli
     font-size: 14px;}
 
 /*导航栏目*/
-nav{width: 100%;height: 100px;background-color: #e4e2cd;margin-top: 50px}
-nav form{display:block;text-align:center;padding-top: 32px;}
-nav form input{outline: none;border: none;width: 630px;height: 36px;border-radius: 18px;text-indent: 20px;
-    font-size: 18px;}
-nav form button{border: none;font-size: 20px;outline: none}
+nav{width: 100%;height: 80px;background-color: #fff;margin-top: 55px;}
+nav .nav-left{width: 30%;margin-left:20px;}
+nav .nav-right{width: 60%;}
+nav .change{padding: 0 10px;color: #ff201e;}
+nav #citySelect{clear:both;display: none;}
+nav #citySelect select{background-color:#fbffbc}
+nav form{display:block;float:left;padding-top: 22px;}
+nav form input{outline: none;border: none;width: 500px;height: 36px;border-radius: 18px;background: #f1cf78;text-indent: 20px;  font-size: 18px;}
+nav form button{border: none;font-size: 20px;outline: none;background-color:#edffa0;}
 nav form button:hover{cursor: pointer;}
 
 
 /*底部信息*/
-.footer{height:100px;background-color: #e4e2cd;text-align: center}
-.footer_logo{width:800px;margin: 0 auto;}
-.footer_logo img{width:95px;height: 35px; float: left;}
-.footer_logo img:last-child,img:nth-child(2){width: 250px;height: 40px;padding-left: 30px;}
+.footer{clear:both;height:60px;background-color: #f1cf78;text-align: center}
 .footer span{padding-left: 10px;}
